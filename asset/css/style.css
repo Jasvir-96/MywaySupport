@@ -26,7 +26,9 @@ p {
     line-height: 140%;
     /* 22.4px */
 }
-
+body{
+    background: #F9FCFF;
+}
 .padding-top-60 {
     padding-top: 60px;
 }
@@ -171,6 +173,7 @@ p {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    border: transparent;
 }
 .contact-us-button:hover{
     border: 1px solid #003D79;
@@ -379,8 +382,8 @@ header {
 
 .service-card-detail {
     border-radius: 20px;
-    background: var(--Neutral, #D9D9D9);
-    width: 85%;
+    background: #fff;
+    width: 92%;
     /* filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.15)); */
     margin-top: -80px;
 
@@ -395,19 +398,20 @@ header {
     /* object-fit: contain; */
 
     max-height: 397px;
+    border-radius: 10px;
 }
 
 .service-card-detail :where(h3) {
-    color: #000;
+    color: #14273D;
     font-family: Onest;
-    font-size: 28px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
 
 .service-card-detail :where(p) {
-    color: #000;
+    color: rgba(0, 61, 121, 0.90);
     font-family: Onest;
     font-size: 16px;
     font-style: normal;
@@ -417,7 +421,7 @@ header {
 }
 
 .service-card-detail :where(a) {
-    color: #000;
+    color: #003D79;
     font-family: Onest;
     font-size: 16px;
     font-style: normal;
@@ -427,7 +431,7 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #003D79;
     width: max-content;
 
     span {
@@ -464,9 +468,10 @@ header {
     height: 50px;
     flex-shrink: 0;
     aspect-ratio: 1/1;
-    background-color: #fff;
+    background-color: #E2F6FF;
     margin-top: -55px;
     border-radius: 50px;
+    padding: 8px;
 }
 
 .first-slider-one.first-slider-one {
@@ -568,12 +573,12 @@ header {
 }
 
 .about-us-tittle {
-    color: #000;
+    color: #0096D6;
     text-align: center;
     font-family: Onest;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 140%;
     border: none;
     background-color: transparent;
@@ -581,7 +586,7 @@ header {
 }
 
 .right-side-about-us h3 {
-    color: #000;
+    color: #003D79;
     font-family: Onest;
     font-size: 24px;
     font-style: normal;
@@ -591,7 +596,7 @@ header {
 }
 
 .right-side-about-us :where(p) {
-    color: #000;
+    color: rgba(0, 61, 121, 0.90);
     font-family: Onest;
     font-size: 16px;
     font-style: normal;
@@ -599,13 +604,34 @@ header {
     line-height: 140%;
     /* 22.4px */
 }
-
+.right-side-about-us {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-left: 74px;
+}
 .bigg-card {
     padding: 30px;
     border-radius: 20px;
-    background: #D8D8D8;
+    background: #E6F3FF;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
 }
-
+.bigg-card img {
+    z-index: 1;
+    position: relative;
+    border-radius: 10px;
+}
+.img-bg-div {
+    width: 153px;
+    height: 100%;
+    flex-shrink: 0;
+    background: #56A6CF;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0px 20px 20px 0px;
+}
 .testi-left {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='34' viewBox='0 0 45 34' fill='none'%3E%3Cpath d='M35.67 33.4912C32.4742 33.3032 30.1714 32.1283 28.7615 29.9665C27.3517 27.8047 26.6467 25.3609 26.6467 22.6351C26.6467 19.3454 27.3047 16.1967 28.6206 13.1889C30.0304 10.0872 31.8163 7.40842 33.9781 5.15261C36.1399 2.8968 38.4897 1.34593 41.0275 0.5L44.4112 5.15261C43.1893 5.99854 41.9674 7.12644 40.7455 8.53632C39.6176 9.85221 38.5837 11.2621 37.6438 12.766C36.7979 14.2698 36.1869 15.7737 35.8109 17.2776C37.5028 17.3716 38.9597 17.7945 40.1816 18.5465C41.4035 19.2044 42.3434 20.0973 43.0013 21.2252C43.6593 22.3531 43.9883 23.716 43.9883 25.3139C43.9883 27.9457 43.1893 30.0135 41.5914 31.5174C39.9936 32.9272 38.0198 33.5852 35.67 33.4912ZM9.16422 33.4912C5.8745 33.3972 3.5247 32.2693 2.11482 30.1075C0.70494 27.8517 0 25.3609 0 22.6351C0 19.3454 0.657944 16.1967 1.97383 13.1889C3.38371 10.0872 5.16956 7.40842 7.33137 5.15261C9.49319 2.8968 11.843 1.34593 14.3808 0.5L17.7645 5.15261C16.5426 5.99854 15.3207 7.12644 14.0988 8.53632C12.9709 9.85221 11.937 11.2621 10.9971 12.766C10.1511 14.2698 9.54019 15.7737 9.16422 17.2776C10.8561 17.3716 12.3129 17.7945 13.5348 18.5465C14.7567 19.2044 15.6967 20.0973 16.3546 21.2252C17.0125 22.3531 17.3415 23.716 17.3415 25.3139C17.3415 27.9457 16.4956 29.9665 14.8037 31.3764C13.2059 32.7863 11.326 33.4912 9.16422 33.4912Z' fill='%2328303F'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
@@ -616,7 +642,7 @@ header {
 }
 
 .testi-pera {
-    color: #000;
+    color: rgba(0, 61, 121, 0.90);
     font-family: Onest;
     font-size: 16px;
     font-style: normal;
@@ -626,7 +652,7 @@ header {
 }
 
 .testi-name {
-    color: #000;
+    color: #003D79;
     font-family: Onest;
     font-size: 20px;
     font-style: normal;
@@ -636,7 +662,7 @@ header {
 }
 
 .testi-designation {
-    color: #000;
+    color: rgba(0, 61, 121, 0.90);
     font-family: Onest;
     font-size: 16px;
     font-style: normal;
@@ -647,7 +673,7 @@ header {
 
 
 .index-last-slider-one.index-last-slider-one {
-    background-color: #D9D9D9;
+    background-color: rgba(217, 217, 217, 0.22);
     width: 70px !important;
     height: 70px !important;
     border-radius: 50px;
@@ -658,16 +684,32 @@ header {
     position: absolute;
     top: 45%;
     transform: translate(6px, -12px);
-    border: none;
+    border: 2px solid #003D79
 
+
+}
+.about-us-text{
+    position: relative;
+}
+.about-us-text::after {
+    content: '';
+    background-image: url('../imges/Our-Services.svg');
+    width: 328.768px;
+    height: 11.92px;
+    transform: rotate(360deg);
+    flex-shrink: 0;
+    position: absolute;
+    top: 11px;
+    left: 37%;
+    z-index: -1;
 }
 
 .index-last-slider-one.index-last-slider-one:focus {
-    background-color: black;
+    background-color: #003D79;
 }
 
 .index-last-slider-two.index-last-slider-two:focus {
-    background-color: black !important;
+    background-color: #003D79 !important;
 
 }
 
@@ -706,7 +748,7 @@ header {
 
 
 .index-last-slider-two {
-    background-color: #D9D9D9 !important;
+    background-color: rgba(217, 217, 217, 0.22) !important;
     width: 70px !important;
     height: 70px !important;
     border-radius: 50px;
@@ -718,7 +760,7 @@ header {
     top: 45%;
     right: 0;
     transform: translate(6px, -12px);
-    border: none;
+    border: 2px solid #003D79;
 }
 
 .index-last-slider-two::before {
