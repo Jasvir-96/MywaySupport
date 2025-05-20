@@ -747,9 +747,11 @@ header {
     background-color: #003D79 !important;
 
 }
+
 .testimonials-h {
     position: relative;
 }
+
 .testimonials-h::after {
     content: '';
     background-image: url(../imges/Our-Services.svg);
@@ -761,6 +763,7 @@ header {
     top: 43px;
     transform: rotate(1.918deg);
 }
+
 /* .index-last-slider-one.index-last-slider-one:hover {
     background-color: #D9D9D9;
     width: 70px !important;
@@ -835,11 +838,14 @@ header {
     background-image: url('../imges/info-bg.png');
     background-position: center;
     /* background-repeat: no-repeat; */
-}button.l-about-us.client-cta {
+}
+
+button.l-about-us.client-cta {
     border-radius: 12px;
     border: 1px solid #FFF;
     background: rgba(255, 255, 255, 0.00);
-}   
+}
+
 footer {
     padding: 59px 61px 23px 61px;
     background: #003D79;
@@ -1232,7 +1238,7 @@ footer {
 
 .services-last-section-inner {
     border-radius: 50px 0px 0px 50px;
-    background: #F0F0F0;
+    background: rgba(249, 214, 118, 0.39);
     padding-top: 42px;
     padding-bottom: 43px;
 }
@@ -1245,7 +1251,7 @@ footer {
     align-items: center;
     border-radius: 28.83px;
     background: #D9D9D9;
-    transform: translateX(-92px);
+    transform: translateX(-80px);
 }
 
 .our-team-hero-section {
@@ -1781,7 +1787,7 @@ div#SuCessfullModal {
     line-height: 140%;
 }
 
-.career-info h2 {
+.career-info h2banner-page-heading-service {
     color: #000;
     font-family: Onest;
     font-size: 40px;
@@ -2027,4 +2033,91 @@ input#inputGroupFile02 {
     /* 27px */
     max-width: 441px;
     margin-bottom: 58px;
+}
+
+.banner-page-heading-service {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 32px 23px 0px 28px;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.banner-page-heading-service h3:first-child {
+    color: var(--haeding, #003D79);
+    font-family: Rubik;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 138%;
+    /* 57.96px */
+}
+
+.banner-page-heading-service h3:nth-child(2) {
+    color: #DBB73A;
+    font-family: Rubik;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 138%;
+    width: max-content;
+    position: relative;
+}
+
+.my-wayyyy {
+    color: var(--haeding, #003D79);
+    font-family: Rubik;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 138%;
+    /* 57.96px */
+}
+
+.sevice-page-why-choose-us {
+    color: #14273D;
+    text-align: center;
+    font-family: Onest;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+}
+
+.about-us-hero-pera-page.no {
+    color: var(--haeding, #003D79);
+    font-family: Rubik;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 58.8px */
+    position: relative;
+}
+
+.about-us-hero-pera-page.no::after {
+    width: 261.215px;
+    height: 16.787px;
+    flex-shrink: 0;
+    background-image: url(../imges/service-bgg.png);
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -4px;
+    background-repeat: no-repeat;
+
+}
+
+.our-services-inex-phera.no {
+    color: rgba(0, 61, 121, 0.90);
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
 }
