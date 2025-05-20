@@ -31,7 +31,30 @@
         max-height: 727px;
         overflow: hidden;
     }
-    
+
+    .bigg-card {
+        margin: 15px;
+    }
+
+    .hero-section-about-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("../imges/Group\ 1612.svg");
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        opacity: 0.4;
+        z-index: -1;
+    }
+
+    .hero-section-about-section {
+        background: #003D79;
+
+    }
 }
 
 @media (width < 991px) {
@@ -79,65 +102,83 @@
     section.career-section {
         padding: 20px;
     }
+
     .title-career h2 {
         font-size: 30px;
     }
+
     .career-info h2 {
         font-size: 25px;
     }
+
     .apply-now-col h3 {
         font-size: 24px;
     }
+
     a.apply-now-btn {
         margin-top: 10px;
     }
+
     .contact-form {
         margin-top: 20px !important;
     }
+
     .contact-form.career-form {
         margin-top: 20px !important;
     }
+
     section.contact-us-title {
         padding: 20px;
     }
+
     .heading-contect h2 {
         font-size: 30px;
     }
+
     .social-icon {
         display: flex;
         flex-direction: row;
         gap: 24px;
     }
+
     .contact-form input {
         margin-bottom: 40px;
     }
+
     div#SuCessfullModal .modal-content {
         padding: 20px;
     }
+
     .thank-you-modal-content h2 {
         font-size: 30px;
     }
+
     .heading-Contact-info-dev {
         margin-top: 20px;
     }
+
     .hero-section-text h2 {
         font-size: 30px;
     }
+
     .service-section-index-description {
         font-size: 25px;
     }
+
     .img-section-hero {
         display: none !important;
         gap: 24px;
         max-width: 100% !important;
         transform: translateX(50px);
     }
+
     .our-team-hero-section {
         background: #E7E7E7;
         padding-top: 83px;
         /* overflow: hidden; */
         max-height: 100% !important;
     }
+
     .hero-section-text {
         display: flex;
         flex-direction: column;
@@ -146,49 +187,100 @@
         overflow: hidden;
         padding-bottom: 89px;
     }
+
     .img-uppr-div {
         transform: none !important;
     }
+
     .sevice-hero-section {
         height: auto !important;
     }
+
     .servi--hero-heading {
         font-size: 30px;
     }
+
     section {
         padding: 60px 0;
     }
+
     .index-last-slider-two {
         width: 40px !important;
         height: 40px !important;
         right: 11px !important;
     }
+
     .index-last-slider-one.index-last-slider-one {
         width: 40px !important;
         height: 40px !important;
         left: 0px !important;
         z-index: 1;
     }
+
     .hero-section-index {
         padding-top: 40px;
         padding-bottom: 144px;
     }
+
     .hero-section-left-side-inner-text h2 {
         font-size: 30px;
     }
+
     .service-card-detail {
         margin-left: 23px;
     }
+
     .service-card-detail :where(h3) {
         font-size: 20px !important;
     }
+
     .right-side-about-us h3 {
         font-size: 20px !important;
     }
+
     a {
         width: auto !important;
     }
+
     li.nav-item {
         width: fit-content;
+    }
+
+    .mobile-screen-bg {
+        background: #003D79;
+        z-index: 1;
+
+    }
+
+    .mobile-screen-bg::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("../imges/Group\ 1612.svg");
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        opacity: 0.4;
+        z-index: -1;
+    }
+
+    .up-down-card-inner aside {
+        margin-top: 0;
+    }
+
+    .up-down-card-inner aside.lil-bit-up {
+        margin-top: 0;
+    }
+
+    .hero-section-about-section {
+        padding-bottom: 60px;
+    }
+
+    .up-down-card-inner aside {
+        display: flex;
+        justify-content: center;
     }
 }
