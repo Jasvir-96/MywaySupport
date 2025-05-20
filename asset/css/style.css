@@ -303,7 +303,7 @@ body {
 
 .explore-sevices {
     border-radius: 12px;
-    padding: 14px 20px;
+    padding: 24px 30px;
     border: 1px solid #003D79;
     background: #FFF;
     color: #003D79;
@@ -381,6 +381,7 @@ h2.service-section-index-description::after {
     /* 22.4px */
     max-width: 876px;
 }
+
 
 header {
     z-index: 1111;
@@ -843,6 +844,8 @@ header {
 button.l-about-us.client-cta {
     border-radius: 12px;
     border: 1px solid #FFF;
+    padding: 24px 30px;
+
     background: rgba(255, 255, 255, 0.00);
 }
 
@@ -1308,13 +1311,14 @@ footer {
     height: 324px;
     flex-shrink: 0;
     border-radius: 17.237px;
-    background: #D9D9D9;
 }
+
 .team-cards.forth-img {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
+
 .team-cards.first {
     transform: translate(0, 59px);
 }
@@ -1329,7 +1333,7 @@ footer {
 }
 
 .forth-cards-our-team {
-    transform: translateY(-659px);
+    transform: translateY(-672px);
 }
 
 .fiveth-cards-our-team {
@@ -1339,7 +1343,7 @@ footer {
 
 .team-card {
     height: 478px;
-    background-image: url(../imges/Services2.png); 
+    background-image: url(../imges/Services2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1359,18 +1363,27 @@ footer {
 }
 
 .team-card:hover {
-    background: #262424;
+    background: #003D79;
     transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.team-card:hover .team-img {
+    scale: 0;
 }
 
 .team-card:hover .client-name {
     color: #fff;
+    position: relative;
+
 }
 
 .discription-button {
     display: flex;
     flex-direction: column;
     gap: 21px;
+    position: relative;
+    z-index: 222;
 }
 
 .team-card:hover .card-phera p {
@@ -1400,8 +1413,8 @@ footer {
     gap: 10px;
     align-self: stretch;
     border-radius: 20px;
-    border: 1px solid #000;
-    color: #000;
+    border: 1px solid #ffffff;
+    color: #ffffff;
     font-family: Onest;
     font-size: 20px;
     font-style: normal;
@@ -1411,7 +1424,7 @@ footer {
 }
 
 .client-name {
-    color: #000;
+    color: #ffffff;
     font-family: Onest;
     font-size: 18px;
     font-style: normal;
@@ -1433,23 +1446,32 @@ footer {
     gap: 10px;
     align-self: stretch;
     border-radius: 12px;
-    background: #D9D9D9;
-    color: #000;
+    background: linear-gradient(180deg, #0F7CE6 0%, #003D79 100%);
+    color: #ffffff;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     border: none;
+
 }
 
+.join-us-amember-button:hover {
+    border-radius: 12px;
+    outline: 1px solid #FFF;
+    background: linear-gradient(180deg, #003D79 0%, #0B2A48 100%);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    transition: .2s;
+}
 
 /* contact us page css start  */
 
 section.contact-us-title {
-    background: #E7E7E7;
-    padding: 72px 64.012px 242.67px 64px;
+    background: url(../imges/contactusbanner.png) lightgray 50% / cover no-repeat;
+    padding: 80px 64.012px 223px 64px;
     justify-content: center;
+    background-position: center;
 }
 
 .heading-contect {
@@ -1459,12 +1481,14 @@ section.contact-us-title {
 }
 
 .heading-contect h4 {
-    color: #000;
-    font-family: Onest;
-    font-size: 24px;
+    color: var(--Neutral, #D9D9D9);
+    font-family: Rubik;
+    font-size: 50px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 36px;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+    /* 65px */
 }
 
 .heading-contect h2 {
@@ -1490,9 +1514,9 @@ section.contact-us-title {
     display: flex;
     padding: 50px 20px;
     flex-direction: column;
-    align-items: flex-end;
+
     gap: 40px;
-    margin-top: -200px;
+    margin-top: -144px;
 }
 
 .contact-form textarea {
@@ -1528,11 +1552,13 @@ form.row.get-touch button {
     font-weight: 500;
     line-height: normal;
 }
-form.row.get-touch button:hover{
+
+form.row.get-touch button:hover {
     border: 1px solid #FFF;
     background: linear-gradient(180deg, #003D79 0%, #0B2A48 100%);
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
 }
+
 .heading-Contact-info {
     display: flex;
     flex-direction: column;
@@ -1774,6 +1800,7 @@ div#SuCessfullModal {
     font-weight: 700;
     line-height: 140%;
 }
+
 .career-info h2 {
     color: var(--haeding, #003D79);
     font-family: Rubik;
@@ -1782,6 +1809,7 @@ div#SuCessfullModal {
     font-weight: 600;
     line-height: 130%;
 }
+
 .career-info h2banner-page-heading-service {
     color: #000;
     font-family: Onest;
@@ -1857,9 +1885,11 @@ a.apply-now-btn {
 .img-left-career {
     display: inline-block;
 }
+
 .img-left-career img {
     width: 100%;
 }
+
 .contact-form input {
     border-radius: 20px !important;
     color: rgba(60, 60, 67, 0.60);
@@ -1878,14 +1908,15 @@ a.apply-now-btn {
     align-items: center;
     align-self: stretch;
 }
+
 .contact-form label {
-color: #003D79;
-font-family: Rubik;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-padding-bottom: 14px;
+    color: #003D79;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 14px;
 }
 
 .contact-form input::placeholder {
@@ -1912,6 +1943,7 @@ padding-bottom: 14px;
     padding: 15px 30px;
     justify-content: stretch;
 }
+
 .contact-form.career-form {
     background: none;
     border-radius: 0;
@@ -2053,18 +2085,17 @@ input#inputGroupFile02 {
 }
 
 .banner-page-heading-service h3:nth-child(2) {
-    color: #DBB73A;
+    color: var(--haeding, #003D79);
     font-family: Rubik;
     font-size: 42px;
     font-style: normal;
     font-weight: 600;
     line-height: 138%;
-    width: max-content;
-    position: relative;
+    /* 57.96px */
 }
 
 .my-wayyyy {
-    color: var(--haeding, #003D79);
+    color: #DBB73A;
     font-family: Rubik;
     font-size: 42px;
     font-style: normal;
@@ -2116,4 +2147,242 @@ input#inputGroupFile02 {
     font-weight: 400;
     line-height: 150%;
     /* 24px */
+}
+
+.team-img {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+}
+
+.our-team-pera-page {
+    color: var(--haeding, #003D79);
+    font-family: Rubik;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    /* 54.6px */
+}
+
+.services-last-section-inner.nnn {
+    border-radius: 50px 0px 0px 50px;
+    background: #E2FCFF !important;
+}
+
+.team-cards img {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.team-card:not(:hover):after {
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    left: 0;
+    bottom: 0;
+    z-index: 22;
+}
+
+.weare-albase-happy {
+    border-radius: 40px;
+    background: #003D79;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+    padding: 40px 43px;
+    right: -330px;
+    max-width: 457px;
+
+}
+
+.assiste-u {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    /* 41.6px */
+}
+
+.socials-div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.email-phone-adress {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.socials-details {
+    padding: 20px 10px 20px 20px;
+    border-radius: 20px;
+    border: 1px solid #E1E1E1;
+    background: rgba(247, 247, 247, 0.12);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.socials-details :where(h5) {
+    color: #FFF;
+    font-family: Onest;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    /* 28px */
+}
+
+.socials-details :where(h6) {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.line- {
+    background: #FFF;
+    mix-blend-mode: color-dodge;
+    height: 1px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-links h5 {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    /* 200% */
+}
+
+.g-in-touch-w-us {
+    margin-bottom: 36px;
+    max-width: 429px;
+}
+
+.g-in-touch-w-us h4 {
+    color: #003D79;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 36px */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+    user-select: none;
+    border-radius: 20px;
+    margin-bottom: 27px;
+
+}
+
+.dropdown-selected {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    color: rgba(60, 60, 67, 0.60);
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid #DADADA;
+}
+
+.dropdown-selected::after {
+    content: '';
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    /* transform: translateY(-50%) rotate(45deg); */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='7' viewBox='0 0 13 7' fill='none'%3E%3Cpath d='M1.5 1.5L6.5 5.5L11.5 1.5' stroke='%233C3C43' stroke-opacity='0.6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+
+    /* border: solid #003D79; */
+    border-width: 0 2px 2px 0;
+    padding: 4px;
+    pointer-events: none;
+    transition: transform 0.3s;
+    background-repeat: no-repeat;
+    width: 13px;
+}
+
+.dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    display: none;
+    z-index: 10;
+    border-radius: 5px;
+    color: rgba(60, 60, 67, 0.60);
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dropdown-option {
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dropdown-option:hover {
+    border-radius: 6px;
+    border: 1px solid #003D79;
+    background: rgba(98, 185, 247, 0.31);
+}
+
+.custom-dropdown.open .dropdown-options {
+    display: block;
+}
+
+.custom-dropdown.open .dropdown-selected::after {
+    transform: rotate(-180deg);
 }
