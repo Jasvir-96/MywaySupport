@@ -1255,7 +1255,7 @@ footer {
 }
 
 .our-team-hero-section {
-    background: #E7E7E7;
+    background: linear-gradient(3deg, #FFF -0.1%, #9CE1FF 233.75%);
     padding-top: 83px;
     overflow: hidden;
     max-height: 727px;
@@ -1271,8 +1271,8 @@ footer {
 }
 
 .hero-section-text h2 {
-    color: #000;
-    font-family: Onest;
+    color: #003D79;
+    font-family: Rubik;
     font-size: 46px;
     font-style: normal;
     font-weight: 600;
@@ -1281,7 +1281,7 @@ footer {
 }
 
 .hero-section-text p {
-    color: #000;
+    color: rgba(0, 61, 121, 0.90);
     font-family: Onest;
     font-size: 18px;
     font-style: normal;
@@ -1310,7 +1310,11 @@ footer {
     border-radius: 17.237px;
     background: #D9D9D9;
 }
-
+.team-cards.forth-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 .team-cards.first {
     transform: translate(0, 59px);
 }
@@ -1325,7 +1329,7 @@ footer {
 }
 
 .forth-cards-our-team {
-    transform: translateY(-650px);
+    transform: translateY(-659px);
 }
 
 .fiveth-cards-our-team {
@@ -1335,7 +1339,7 @@ footer {
 
 .team-card {
     height: 478px;
-    background-image: url(../imges/Services2.png);
+    background-image: url(../imges/Services2.png); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
