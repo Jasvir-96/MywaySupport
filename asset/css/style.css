@@ -113,7 +113,7 @@ body{
     border-radius: 6px;
     background: #d9d9d900;
     /* width: 146px; */
-    height: 40px;
+    /* height: 40px; */
     flex-shrink: 0;
 }
 
@@ -712,7 +712,20 @@ header {
     background-color: #003D79 !important;
 
 }
-
+.testimonials-h {
+    position: relative;
+}
+.testimonials-h::after {
+    content: '';
+    background-image: url(../imges/Our-Services.svg);
+    width: 328.768px;
+    height: 11.92px;
+    flex-shrink: 0;
+    right: 34px;
+    position: absolute;
+    top: 43px;
+    transform: rotate(1.918deg);
+}
 /* .index-last-slider-one.index-last-slider-one:hover {
     background-color: #D9D9D9;
     width: 70px !important;
@@ -783,13 +796,19 @@ header {
 .main-bg-of-join-now {
     padding: 83px 81.5px;
     border-radius: 20px;
-    background: #8D8D8D;
-}
-
+    /* background: #003D79; */
+    background-image: url('../imges/info-bg.png');
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}button.l-about-us.client-cta {
+    border-radius: 12px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.00);
+}   
 footer {
-    background: #F6F6F6;
-
     padding: 59px 61px 23px 61px;
+    background: #003D79;
+    box-shadow: 0px -6px 24px 0px rgba(0, 0, 0, 0.25);
 
 
 }
@@ -810,17 +829,19 @@ footer {
 
 }
 
-.footer-logo :where(span) {
+.social-media a {
     width: 34px;
     display: flex;
     height: 34px;
     aspect-ratio: 1/1;
-    background: #D9D9D9;
+    background: #FFDE6C;
     border-radius: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 .quick-links-footer {
-    color: #000;
+    color: #fff;
     font-family: Onest;
     font-size: 18px;
     font-style: normal;
@@ -830,7 +851,7 @@ footer {
 }
 
 .footer-list-ul :where(a) {
-    color: #000;
+    color: #EFEFF0;
     font-family: Onest;
     font-size: 16px;
     font-style: normal;
@@ -852,9 +873,11 @@ footer {
 .location-icon {
     width: 24px;
     height: 24px;
-    background-color: #000;
+    background-color: rgba(98, 185, 247, 0.31);
     border-radius: 50px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 }
@@ -867,7 +890,7 @@ footer {
 }
 
 .full-adress-div :where(p) {
-    color: #000;
+    color: #EFEFF0;
     font-family: Onest;
     font-size: 14px;
     font-style: normal;
@@ -877,7 +900,7 @@ footer {
 }
 
 .full-adress-div :where(h5) {
-    color: #000;
+    color: #EFEFF0;
     font-family: Onest;
     font-size: 16px;
     font-style: normal;
@@ -887,12 +910,12 @@ footer {
 }
 
 .footer-bottom {
-    background: #D9D9D9;
+    background: #FFF;
     padding: 11px 0;
 }
 
 .footer-bottom :where(p) {
-    color: #000;
+    color: #003D79;
     font-family: Onest;
     font-size: 16px;
     font-style: normal;
@@ -902,7 +925,7 @@ footer {
 }
 
 .footer-upperh {
-    color: #000;
+    color: #FFF;
     font-family: Onest;
     font-size: 40px;
     font-style: normal;
@@ -912,7 +935,7 @@ footer {
 }
 
 .footer-company-pera {
-    color: #000;
+    color: #EFEFF0;
     font-family: Onest;
     font-size: 18px;
     font-style: normal;
