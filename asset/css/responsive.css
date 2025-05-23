@@ -26,7 +26,13 @@
     .services-last-section {
         padding-left: 92px;
         margin-right: 0;
+
         padding-right: 0;
+        width: 100%;
+    }
+
+    .main-padding-this {
+        padding-left: 15%;
     }
 
     .hero-main {
@@ -58,6 +64,15 @@
         background: #003D79;
 
     }
+
+    .wheel-chairr {
+        padding-left: 40px;
+    }
+
+    .service-why-chooesw-us {
+        padding-left: 60px;
+    }
+
 }
 
 @media (width < 991px) {
@@ -282,42 +297,128 @@
         display: flex;
         justify-content: center;
     }
+
     .title-career {
         padding: 20px;
     }
-    .weare-albase-happy{
+
+    .weare-albase-happy {
         position: relative !important;
         right: 0px;
     }
+
     .contact-form {
         flex-direction: column-reverse;
-}
-.banner-page-heading-service {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    padding: 32px 23px 0px 28px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-.sevice-hero-section {
-    height: auto;
-    padding: 40px 10px;
-}
+    }
+
+    .banner-page-heading-service {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        padding: 32px 23px 0px 28px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .sevice-hero-section {
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    .about-us-text::after {
+        width: 150px;
+        right: 100px;
+        background-size: contain;
+        top: -20px
+    }
+
+    h2.service-section-index-description::after {
+        width: 150px;
+        right: 100px;
+        background-size: contain;
+        top: 65px;
+    }
+
+    .testimonials-h::after {
+        width: 150px;
+        right: 50px;
+        background-size: contain;
+        top: 30px;
+        background-repeat: no-repeat;
+    }
+
+    .upper-information-bar {
+        display: none;
+    }
+
+    .hero-section-index {
+        background-position: center 40%;
+    }
+
+    .main-nav-bar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .img-bg-div {
+        display: none;
+    }
+
+    .wheelchair-bg img {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .wheelchair-bg {
+        width: 100%;
+    }
+
+    .empowing-you-live::after {
+        width: 150px;
+        right: 100px;
+        background-size: contain;
+        top: 70px;
+        background-repeat: no-repeat;
+    }
+
+    .about-us-heading::after {
+        width: 100px;
+        background-size: contain;
+
+    }
+
+    .services-last-section {
+        overflow: hidden;
+    }
+
+    .service-why-chooesw-us {
+        padding: 15px;
+    }
+
+    .select2-container {
+        width: 100% !important;
+    }
+
+    .weare-albase-happy {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 @media (width < 1128px) {
 
-    .weare-albase-happy{
+    .weare-albase-happy {
         position: relative !important;
         right: 0px;
         max-width: 100%;
     }
+
     .contact-form {
         flex-direction: column-reverse;
         width: 100%;
-}
+    }
 
 }
