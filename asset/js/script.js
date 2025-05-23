@@ -3,11 +3,11 @@ $(document).ready(function () {
     $('.my-slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         dots: false,
-        speed: 300,
+        speed: 200,
         infinite: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 2000,
         autoplay: true,
         pauseOnHover: true,
 

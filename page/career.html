@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../asset/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
   
 </head>
 
@@ -140,7 +142,7 @@
                                 </p>
                             </div>
                             <div class="col-lg-4 d-flex justify-content-end align-items-center">
-                                <a href="#" class="apply-now-btn">Apply Now →</a>
+                                <a href="#career-form" class="apply-now-btn">Apply Now →</a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +162,7 @@
                                 </p>
                             </div>
                             <div class="col-lg-4 d-flex justify-content-end align-items-center">
-                                <a href="#" class="apply-now-btn">Apply Now →</a>
+                                <a href="#career-form" class="apply-now-btn">Apply Now →</a>
                             </div>
                         </div>
                     </div>
@@ -180,7 +182,7 @@
                                 </p>
                             </div>
                             <div class="col-lg-4 d-flex justify-content-end align-items-center">
-                                <a href="#" class="apply-now-btn">Apply Now →</a>
+                                <a href="#career-form" class="apply-now-btn">Apply Now →</a>
                             </div>
                         </div>
                     </div>
@@ -200,7 +202,7 @@
                                 </p>
                             </div>
                             <div class="col-lg-4 d-flex justify-content-end align-items-center">
-                                <a href="#" class="apply-now-btn">Apply Now →</a>
+                                <a href="#career-form" class="apply-now-btn">Apply Now →</a>
                             </div>
                         </div>
                     </div>
@@ -209,7 +211,7 @@
         </div>
     </section>
     <section class="pt-0">
-        <div class="container">
+        <div class="container" id="career-form">
             <div class="row justify-content-center mb-1">
                 <div class="col-lg-8">
                     <div class="career-info">
@@ -225,7 +227,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="contact-form career-form">
+                    <div class="contact-form career-form" >
                         <form class="row get-touch">
                             <div class="col-md-6">
                                 <label>First name</label>
@@ -254,16 +256,21 @@
                             </div>
                             <div class="col-md-12">
                                 <label>Positions apply for</label>
-                                <input type="text" class="form-control" id="inputAddress2"
-                                    placeholder="Position applying for">
+                                    <select class="js-example-basic-single col-md-12" name="state">
+                                        <option value="AL">Position</option>
+                                        <option value="WY">Position</option>
+                                        <option value="WY">Position</option>
+                                        <option value="WY">Position</option>
+                                        <option value="WY">Position</option>
+                                      </select>
                             </div>
                             <div class="col-md-12">
                                 <label>Upload CV</label>
                                 <input type="file" class="form-control" id="inputGroupFile02">
-                                <label class="input-group-text" for="inputGroupFile02">Drag and drop files here or browse</label>
+                                <label class="input-group-text" for="inputGroupFile02" type="file">Drag and drop files here or browse</label>
                             </div>
                             <div class="col-md-12">
-                                <label>First name</label>
+                                <label>Message</label>
                                 <textarea type="text" class="form-control" id="inputCity"
                                     placeholder="Message"></textarea>
                             </div>
@@ -284,11 +291,12 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-body thank-you-modal-content-body">
-                    <img src="../asset/imges/contact-modal.svg" alt="Sucessfull">
+                    <img src="../asset/imges/sucess-modal.png" alt="Sucessfull">
                     <div class="thank-you-modal-content">
                         <h2>Thank you!<br> For reaching us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
+                        <p>
+                            We appreciate your interest in joining My Way Support Tasmania. Your application has been successfully submitted, and our team will review your information shortly.<br>If you have any questions or need further assistance, don’t hesitate to contact us at<span> info@mywaytas.com.au</span> or <span>0466 921 739.</span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -348,10 +356,14 @@
                 <div class="footer-list d-flex flex-column gap-3">
                     <h3 class="quick-links-footer">Services</h3>
                     <ul class="footer-list-ul">
-                        <li><a href="#">Service 1 →</a></li>
-                        <li><a href="#">Service 2 →</a></li>
-                        <li><a href="#">Service 3 →</a></li>
-
+                        <li><a href="./services.html">Home and 
+                            Living →</a></li>
+                        <li><a href="./services.html">Supported 
+                            Independent Living →</a></li>
+                        <li><a href="./services.html">Short Term 
+                            Accommodation →</a></li>
+                        <li><a href="./services.html">Community 
+                            Access →</a></li>
                     </ul>
                 </div>
             </div>
@@ -447,7 +459,13 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.28);">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> <!-- Slick -->
     <script src="../asset/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap (optional, after jQuery) -->
     <script src="../asset/js/script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+    // In your Javascript (external .js resource or <script> tag)
+$(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});
+</script>
 </body>
 
 </html>

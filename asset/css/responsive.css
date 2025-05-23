@@ -195,10 +195,6 @@
         transform: none !important;
     }
 
-    .sevice-hero-section {
-        height: auto !important;
-    }
-
     .servi--hero-heading {
         font-size: 30px;
     }
@@ -289,4 +285,39 @@
     .title-career {
         padding: 20px;
     }
+    .weare-albase-happy{
+        position: relative !important;
+        right: 0px;
+    }
+    .contact-form {
+        flex-direction: column-reverse;
+}
+.banner-page-heading-service {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding: 32px 23px 0px 28px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.sevice-hero-section {
+    height: auto;
+    padding: 40px 10px;
+}
+}
+
+@media (width < 1128px) {
+
+    .weare-albase-happy{
+        position: relative !important;
+        right: 0px;
+        max-width: 100%;
+    }
+    .contact-form {
+        flex-direction: column-reverse;
+        width: 100%;
+}
+
 }

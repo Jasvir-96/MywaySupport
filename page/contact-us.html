@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../asset/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
     <style>
         /* section.contact-us-title {
     background: #E7E7E7;
@@ -328,7 +330,7 @@ div#SuCessfullModal {
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="contact-form position-relative col-lg-9">
-                        <div class="position-absolute weare-albase-happy">
+                        <div class="weare-albase-happy">
                             <div class="socials-div">
                                 <h3 class="assiste-u">We are always happy to assist you !</h3>
                                 <div class="email-phone-adress">
@@ -357,7 +359,7 @@ div#SuCessfullModal {
 
                             </div>
                             <div class="">
-                                <div class="line-"></div>
+                                <div class="border-line-"></div>
                                 <div class="social-links">
                                     <h5>Contact with us</h5>
                                     <div class="d-flex justify-content-between">
@@ -428,7 +430,14 @@ div#SuCessfullModal {
 
                                 <div class="col-md-12">
                                     <label for="">Query</label>
-                                    <input type="text" class="form-control" id="inputAddress" placeholder="Location">
+                                    <!-- <input type="text" class="form-control" id="inputAddress" placeholder="Location"> -->
+                                    <select class="js-example-basic-single col-md-12" name="state">
+                                        <option value="AL">Query type</option>
+                                        <option value="WY">Position</option>
+                                        <option value="WY">Position</option>
+                                        <option value="WY">Position</option>
+                                        <option value="WY">Position</option>
+                                      </select>
                                 </div>
 
                                 <div class="col-md-12">
@@ -438,7 +447,7 @@ div#SuCessfullModal {
                                         placeholder="Message"></textarea>
                                 </div>
                                 <div class="col-lg-12 d-flex justify-content-end">
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
                                         data-bs-target="#SuCessfullModal"> Learn More About Us</button>
                                 </div>
                             </form>
@@ -458,7 +467,7 @@ div#SuCessfullModal {
                         <div class="col-lg-7">
                             <div class="">
 
-                                <h2 class="footer-upperh">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </h2>
+                                <h2 class="footer-upperh">Empowering individuals to thrive and embrace their unique journeys. </h2>
                             </div>
                         </div>
                         <div class="col-lg-5">
@@ -482,11 +491,10 @@ div#SuCessfullModal {
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-body thank-you-modal-content-body">
-                    <img src="../asset/imges/contact-modal.svg" alt="Sucessfull">
+                    <img src="../asset/imges/sucess-modal.png" alt="Sucessfull">
                     <div class="thank-you-modal-content">
                         <h2>Thank you!<br> For reaching us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
+                        <p>We’ve received your submission and will get back to you soon. If you have any urgent inquiries, please reach us at<span> 0466 921 739.</span> Thank you for reaching out to<b> My Way Support Tasmania!</b></p>
                     </div>
                 </div>
             </div>
@@ -546,10 +554,14 @@ div#SuCessfullModal {
                 <div class="footer-list d-flex flex-column gap-3">
                     <h3 class="quick-links-footer">Services</h3>
                     <ul class="footer-list-ul">
-                        <li><a href="#">Service 1 →</a></li>
-                        <li><a href="#">Service 2 →</a></li>
-                        <li><a href="#">Service 3 →</a></li>
-
+                        <li><a href="./services.html">Home and 
+                            Living →</a></li>
+                        <li><a href="./services.html">Supported 
+                            Independent Living →</a></li>
+                        <li><a href="./services.html">Short Term 
+                            Accommodation →</a></li>
+                        <li><a href="./services.html">Community 
+                            Access →</a></li>
                     </ul>
                 </div>
             </div>
@@ -645,7 +657,13 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.28);">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> <!-- Slick -->
     <script src="../asset/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap (optional, after jQuery) -->
     <script src="../asset/js/script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        // In your Javascript (external .js resource or <script> tag)
+    $(document).ready(function() {
+        $('.js-example-basic-single').select2();
+    });
+    </script>
 </body>
 
 </html>
